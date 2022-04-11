@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0B817887-10D8-4AA1-B529-077ADFC96A57}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>eClassroom</RootNamespace>
+    <AssemblyName>eClassroom</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FireSharp">
+      <HintPath>..\..\FireEngC# datagrid\packages\FireSharp.2.0.4\lib\portable-net45+sl5+wp8+win8\FireSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks">
+      <HintPath>..\..\vbEngC\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions">
+      <HintPath>..\..\vbEngC\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop">
+      <HintPath>..\..\vbEngC\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\FireEngC# datagrid\packages\Newtonsoft.Json.6.0.4\lib\net20\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddInformation.Designer.cs">
+      <DependentUpon>AddInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddRoutine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRoutine.Designer.cs">
+      <DependentUpon>AddRoutine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSlide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSlide.Designer.cs">
+      <DependentUpon>AddSlide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddVideo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddVideo.Designer.cs">
+      <DependentUpon>AddVideo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnectClass.Designer.cs">
+      <DependentUpon>ConnectClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAnAccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAnAccountForm.Designer.cs">
+      <DependentUpon>CreateAnAccountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPass.Designer.cs">
+      <DependentUpon>ForgotPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login form.Designer.cs">
+      <DependentUpon>Login form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyFirebaseDatabase.cs" />
+    <Compile Include="Notice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notice.Designer.cs">
+      <DependentUpon>Notice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoticeData.cs" />
+    <Compile Include="PassChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PassChange.Designer.cs">
+      <DependentUpon>PassChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileDetails.Designer.cs">
+      <DependentUpon>ProfileDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoutineData.cs" />
+    <Compile Include="RoutineItem.cs" />
+    <Compile Include="SingleNotice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SingleNotice.Designer.cs">
+      <DependentUpon>SingleNotice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="singleSlide.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="singleSlide.Designer.cs">
+      <DependentUpon>singleSlide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SingleStdInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SingleStdInfo.Designer.cs">
+      <DependentUpon>SingleStdInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="slideData.cs" />
+    <Compile Include="Student.cs" />
+    <Compile Include="MainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainScreen.Designer.cs">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="propfull.cs" />
+    <Compile Include="singleRoutine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="singleRoutine.Designer.cs">
+      <DependentUpon>singleRoutine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SingleVideo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SingleVideo.Designer.cs">
+      <DependentUpon>SingleVideo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentInfoData.cs" />
+    <Compile Include="UserData.cs" />
+    <Compile Include="Video Player.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Video Player.Designer.cs">
+      <DependentUpon>Video Player.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VideoData.cs" />
+    <EmbeddedResource Include="AddInformation.resx">
+      <DependentUpon>AddInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddRoutine.resx">
+      <DependentUpon>AddRoutine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSlide.resx">
+      <DependentUpon>AddSlide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddVideo.resx">
+      <DependentUpon>AddVideo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnectClass.resx">
+      <DependentUpon>ConnectClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAnAccountForm.resx">
+      <DependentUpon>CreateAnAccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPass.resx">
+      <DependentUpon>ForgotPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login form.resx">
+      <DependentUpon>Login form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainScreen.resx">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notice.resx">
+      <DependentUpon>Notice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassChange.resx">
+      <DependentUpon>PassChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileDetails.resx">
+      <DependentUpon>ProfileDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SingleNotice.resx">
+      <DependentUpon>SingleNotice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="singleRoutine.resx">
+      <DependentUpon>singleRoutine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="singleSlide.resx">
+      <DependentUpon>singleSlide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SingleStdInfo.resx">
+      <DependentUpon>SingleStdInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SingleVideo.resx">
+      <DependentUpon>SingleVideo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Video Player.resx">
+      <DependentUpon>Video Player.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\routine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noticeBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noticeBtn1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noticeBtn2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alarm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\routine_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\routine_img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notice_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slide_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_slide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_video.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_video_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\change_pass.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
