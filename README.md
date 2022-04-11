@@ -1,1 +1,2 @@
-# eClassroom-C-
+# eClassroom Desktop Version
+Language: C#
